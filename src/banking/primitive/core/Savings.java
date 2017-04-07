@@ -21,8 +21,11 @@ public class Savings extends Account {
 			if (balance >= 0.0f) {
 				setState(State.OPEN);
 			}
+			return true;//added true return for successful deposit. 
 		}
+		else{//added else statement for failed deposit. 
 		return false;
+		}
 	}
 
 	/**
